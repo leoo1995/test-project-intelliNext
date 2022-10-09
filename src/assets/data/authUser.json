@@ -1,0 +1,16 @@
+{
+  "id": "3333",
+  "firstName": "Luis",
+  "lastName": "Ortiz",
+  "title": "Full-Stack Developer",
+  "joined": "2019-06-23T05:00:00.000Z",
+  "description": "I love play videogames, technology and whatever related with T.I.",
+  "email": "leoo1995@hotmail",
+  "location": {
+    "city": "Bogotá",
+    "country": "Colombia"
+  },
+  "website": "https://github.com/leoo1995",
+  "profilePhoto": "https://avatars.githubusercontent.com/u/43155897?s=400&u=54385052c6d67e253dbe405c1b4218ebc9a5c11b&v=4",
+  "backgroundPhoto": "https://img.freepik.com/free-vector/binary-code-algorithm-digital-data-background_1017-30366.jpg?w=2000&t=st=1665267555~exp=1665268155~hmac=e82b0ef8f5c3c0b05a7eb8610a949edb0e71577cfb446a423c011a93b924343c"
+}

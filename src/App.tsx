@@ -1,35 +1,30 @@
-import { useState } from "react"
-import reactLogo from "./assets/react.svg"
-import "./App.css"
-import { Button } from "./components/Button"
+import { Box } from "@mui/material"
+import { ContainerPaper } from "./components/atoms"
+import { Comment } from "./components/molecules"
+import { Entity } from "./components/molecules/Entity/index"
+import { ProfileInfo } from "./components/organisms/ProfileInfo"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <Button />
-        <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <Box bgcolor={"#f8f8f8"} minHeight="100vh" p={1}>
+      <ContainerPaper width={300}>
+        <h1>Hola mundo</h1>
+
+        <Entity
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQG67U94J9um8g/profile-displayphoto-shrink_800_800/0/1615622754806?e=1670457600&v=beta&t=CnaNpC_YQ0HjhB-lutpi_BgOrZvyUnHN4gJ9k6RGR48"
+          title="Luis Eduardo Ortiz"
+          subtitle="Desarrollador Web"
+        />
+        <Comment
+          likes={3}
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQG67U94J9um8g/profile-displayphoto-shrink_800_800/0/1615622754806?e=1670457600&v=beta&t=CnaNpC_YQ0HjhB-lutpi_BgOrZvyUnHN4gJ9k6RGR48"
+          title="Luis Eduardo Ortiz"
+          message="Este es un comentario Este es un comentarioEste es un comentarioEste es un comentarioEste es un comentarioEste es un comentario"
+        />
+
+        <ProfileInfo />
+      </ContainerPaper>
+    </Box>
   )
 }
 
