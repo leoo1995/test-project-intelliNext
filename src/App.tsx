@@ -2,11 +2,12 @@ import { Box } from "@mui/material"
 import { ContainerPaper } from "./components/atoms"
 import { Comment } from "./components/molecules"
 import { Entity } from "./components/molecules/Entity/index"
+import { Suggestions } from "./components/organisms"
 import { ProfileInfo } from "./components/organisms/ProfileInfo"
 
 function App() {
   return (
-    <Box bgcolor={"#f8f8f8"} minHeight="100vh" p={1}>
+    <Box bgcolor={"#f8f8f8"} minHeight="100vh" p={1} display="flex" gap={2}>
       <ContainerPaper width={300}>
         <h1>Hola mundo</h1>
 
@@ -24,6 +25,7 @@ function App() {
 
         <ProfileInfo />
       </ContainerPaper>
+      <Suggestions />
     </Box>
   )
 }

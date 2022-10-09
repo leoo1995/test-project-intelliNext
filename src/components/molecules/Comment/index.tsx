@@ -1,8 +1,7 @@
 import { useState } from "react"
-import { Avatar, Box, Typography } from "@mui/material"
+import { Avatar, Box } from "@mui/material"
 import { LikeIcon } from "../../atoms/LikeIcon"
-import { IconContainer } from "../../atoms/IconContainer/index"
-import { Paragraph } from "../../atoms/Paragraph/index"
+import { IconContainer, Paragraph, Title } from "../../atoms"
 
 type Props = {
   title: string
@@ -30,9 +29,9 @@ export const Comment = ({
       ></Avatar>
       <Box flex={"auto"}>
         <Box display={"flex"}>
-          <Typography flex={"auto"} variant="subtitle1" color="initial" m={0}>
+          <Title flex={"auto"} m={0}>
             {title}
-          </Typography>
+          </Title>
           <IconContainer
             icon={<LikeIcon active={liked} />}
             onClick={() => setLiked(!liked)}

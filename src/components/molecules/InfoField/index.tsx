@@ -1,5 +1,4 @@
-import { Typography } from "@mui/material"
-import { Paragraph } from "../../atoms/Paragraph/index"
+import { Paragraph, Title } from "../../atoms"
 
 type Props = {
   title?: string
@@ -8,9 +7,7 @@ type Props = {
 export const InfoField = ({ title, message }: Props) => {
   return (
     <>
-      <Typography variant="subtitle1" color="text.primary">
-        {title}
-      </Typography>
+      <Title>{title}</Title>
       <Paragraph>{message}</Paragraph>
     </>
   )
