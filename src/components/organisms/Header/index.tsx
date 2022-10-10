@@ -7,7 +7,8 @@ export const Header = () => {
     <ContainerPaper
       sx={{
         p: 0,
-        background: `url(${userAuth.backgroundPhoto})`,
+        background: `url(${userAuth.backgroundPhoto}) no-repeat`,
+        backgroundSize: "100%",
         minHeight: 300,
         display: "flex",
         flexDirection: "column",
@@ -15,7 +16,13 @@ export const Header = () => {
       }}
       overflow="hidden"
     >
-      <Box display={"flex"} flex="auto" alignItems={"end"}>
+      <Box
+        display={"flex"}
+        flex="auto"
+        alignItems={"end"}
+        zIndex={1}
+        boxShadow={"inset -160px 3px 60px -130px rgba(0,0,0,0.75)"}
+      >
         <Box
           p={1}
           ml={4}

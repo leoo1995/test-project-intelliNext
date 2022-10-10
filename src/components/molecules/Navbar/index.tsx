@@ -22,6 +22,7 @@ export const Navbar = () => {
         sx={{
           padding: 0,
           background: "#fff",
+          boxShadow: "0px 3px 90px 30px rgba(0,0,0,0.75)",
         }}
       >
         <Box ml={22} flexGrow={1} gap={1} display="flex">
