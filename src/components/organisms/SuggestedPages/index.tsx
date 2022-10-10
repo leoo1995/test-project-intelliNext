@@ -20,7 +20,7 @@ export const SuggestedPages = () => {
                 }}
               />
               <IconButton>
-                <FavoriteIcon active={favorite} />
+                <FavoriteIcon size="medium" active={favorite} />
               </IconButton>
             </Box>
           ),

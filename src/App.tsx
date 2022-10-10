@@ -8,6 +8,7 @@ import { Photos } from "./components/organisms/Photos/index"
 import { Polls } from "./components/organisms/Polls"
 import { Post } from "./components/organisms/Post"
 import { Layout } from "./components/templates/Layout/index"
+import { TwitterFeeds } from "./components/organisms/TwitterFeeds/index"
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
     >
       <Layout
         header={<Header />}
-        leftSide={[<ProfileInfo />, <SuggestedPages />]}
+        leftSide={[<ProfileInfo />, <SuggestedPages />, <TwitterFeeds />]}
         main={[<Post />]}
         rightSide={[<Photos />, <Suggestions />, <Polls />]}
       />

@@ -4,7 +4,7 @@ import { Title } from "../../atoms"
 type Props = {
   src?: string
   title?: string
-  subtitle?: string
+  subtitle?: string | React.ReactNode
   avatarSize?: number
   containerProps?: BoxProps
 }

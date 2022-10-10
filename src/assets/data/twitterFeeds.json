@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Brandi Forsythe",
+    "username": "@bforsythe0",
+    "message": "Other antepartum hemorrhage",
+    "photoUser": "https://randomuser.me/api/portraits/med/women/66.jpg",
+    "favorite": true,
+    "hashtags": ["#IT", "#funny"]
+  },
+  {
+    "id": 2,
+    "name": "Danyette Pygott",
+    "username": "@dpygott1",
+    "message": "Displaced fracture of olecranon process without intraarticular extension of unspecified ulna, initial encounter for open fracture type I or II",
+    "photoUser": "https://randomuser.me/api/portraits/med/men/13.jpg",
+    "favorite": false,
+    "hashtags": ["#Lamega"]
+  },
+  {
+    "id": 3,
+    "name": "Matteo Falloon",
+    "username": "@mfalloon2",
+    "message": "Gout due to renal impairment, right wrist",
+    "photoUser": "https://randomuser.me/api/portraits/med/women/95.jpg",
+    "favorite": true,
+    "hashtags": ["#news", "#videogames", "#soapopera"]
+  }
+]
