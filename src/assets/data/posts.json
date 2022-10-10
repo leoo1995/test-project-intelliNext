@@ -383,7 +383,28 @@
     "image": "https://ipt.imgix.net/201349/x/0/1.jpg?ar=1.91%3A1&w=1200&fit=crop",
     "body": "Other optic atrophy, right eye",
     "photoUser": "https://randomuser.me/api/portraits/med/men/21.jpg",
-
+    "alsoLikedTo": [
+      {
+        "id": 1,
+        "name": "Stormy Le feaver",
+        "src": "https://randomuser.me/api/portraits/med/women/65.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Lu Talby",
+        "src": "https://randomuser.me/api/portraits/med/men/5.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Guenevere Bendon",
+        "src": "https://randomuser.me/api/portraits/med/men/30.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Paule Ainslee",
+        "src": "https://randomuser.me/api/portraits/med/women/62.jpg"
+      }
+    ],
     "likes": 38203,
     "timesShared": 10,
     "createdAt": "2022-10-07T22:25:00Z",
@@ -410,7 +431,28 @@
     "image": "https://media.cntraveler.com/photos/605961ae7b588da524cfef44/master/w_4000,h_2667,c_limit/Cappadocia-GettyImages-166186583.jpg",
     "body": "Corrosion of first degree of unspecified single finger (nail) except thumb, initial encounter",
     "photoUser": "https://randomuser.me/api/portraits/med/men/67.jpg",
-
+    "alsoLikedTo": [
+      {
+        "id": 1,
+        "name": "Stormy Le feaver",
+        "src": "https://randomuser.me/api/portraits/med/women/65.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Lu Talby",
+        "src": "https://randomuser.me/api/portraits/med/men/5.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Guenevere Bendon",
+        "src": "https://randomuser.me/api/portraits/med/men/30.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Paule Ainslee",
+        "src": "https://randomuser.me/api/portraits/med/women/62.jpg"
+      }
+    ],
     "likes": 24815,
     "timesShared": 8,
     "createdAt": "2022-05-13T08:39:47Z",
@@ -430,7 +472,28 @@
     "image": "https://static.vecteezy.com/system/resources/previews/002/469/262/non_2x/seascape-sunset-aventure-travel-landscape-scene-vector.jpg",
     "body": "Other specified fracture of right pubis, initial encounter for closed fracture",
     "photoUser": "https://randomuser.me/api/portraits/med/women/34.jpg",
-
+    "alsoLikedTo": [
+      {
+        "id": 1,
+        "name": "Stormy Le feaver",
+        "src": "https://randomuser.me/api/portraits/med/women/65.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Lu Talby",
+        "src": "https://randomuser.me/api/portraits/med/men/5.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Guenevere Bendon",
+        "src": "https://randomuser.me/api/portraits/med/men/30.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Paule Ainslee",
+        "src": "https://randomuser.me/api/portraits/med/women/62.jpg"
+      }
+    ],
     "likes": 9896,
     "timesShared": 1,
     "createdAt": "2022-07-12T15:21:11Z",
