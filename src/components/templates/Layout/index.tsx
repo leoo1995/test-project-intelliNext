@@ -16,7 +16,13 @@ export const Layout = ({ header, leftSide, rightSide, main }: Props) => {
       <Box display={"flex"} flexDirection="column" gap={3}>
         {leftSide}
       </Box>
-      <Box component={"main"} gridColumn="span 2">
+      <Box
+        component={"main"}
+        gridColumn="span 2"
+        display={"flex"}
+        flexDirection={"column"}
+        gap={3}
+      >
         {main}
       </Box>
       <Box component={"aside"} display={"flex"} flexDirection="column" gap={3}>

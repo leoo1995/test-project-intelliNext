@@ -1,11 +1,4 @@
-import {
-  Avatar,
-  AvatarGroup,
-  Box,
-  Button,
-  Input,
-  TextField,
-} from "@mui/material"
+import { Avatar, AvatarGroup, Box, Button, TextField } from "@mui/material"
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined"
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined"
 import {
@@ -16,66 +9,61 @@ import {
   Paragraph,
 } from "../../atoms"
 import { Comment, Entity } from "../../molecules"
+import { Post as PostType } from "../../../types"
+import { formatDatePost } from "../../../utils"
 
-type Props = {
-  id: string | number
-  user: {
-    firstName: string
-    lastName: string
-    photo?: string
-  }
-  alsoLikedTo: [{}]
-  body?: string
-  image?: string
-  likes: number
-  timesShared: number
-  createdAt: string
-}
+type Props = PostType & {}
 
-export const Post = ({}) => {
+export const Post = ({
+  name,
+  photoUser,
+  alsoLikedTo = [],
+  body,
+  image,
+  likes,
+  timesShared,
+  createdAt,
+  comments,
+}: Props) => {
   return (
     <ContainerPaper maxWidth={800} display="grid" gap={1}>
       <Entity
-        src="https://randomuser.me/api/portraits/women/93.jpg"
-        title="Adriana Mancilla"
-        subtitle="12 Dec 2018 at 1:16 AM"
+        src={photoUser}
+        title={name}
+        subtitle={formatDatePost(createdAt)}
       />
 
-      <Paragraph>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates
-        molestias totam repellendus qui animi ad facere provident eligendi amet.
-      </Paragraph>
+      <Paragraph>{body}</Paragraph>
       <Box display={"flex"} justifyContent="center">
-        <Image
-          style={{ width: "100%" }}
-          src="https://imagenes.elpais.com/resizer/LLQ-80CfQIaEguzMtA6ByfCJnew=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/ZZ4XQLZXJ4PEMM4PTAK4TWKYFU.jpg"
-        />
+        <Image style={{ width: "100%" }} src={image} />
       </Box>
 
       <Box display={"flex"} alignItems="center">
-        <IconContainer icon={<LikeIcon />} label={345} />
+        <IconContainer icon={<LikeIcon />} label={likes} />
         <AvatarGroup sx={{ flex: "auto", justifyContent: "start" }}>
-          <Avatar src="https://randomuser.me/api/portraits/women/33.jpg" />
-          <Avatar src="https://randomuser.me/api/portraits/men/33.jpg" />
-
-          <Avatar src="https://randomuser.me/api/portraits/women/3.jpg" />
+          {alsoLikedTo.map(person => (
+            <Avatar key={person.id} src={person.src} alt={person.name} />
+          ))}
         </AvatarGroup>
         <IconContainer
           icon={<ShareOutlinedIcon fontSize="small" />}
-          label={345}
+          label={timesShared}
         />
         <IconContainer
           icon={<ChatBubbleOutlineOutlinedIcon fontSize="small" />}
-          label={345}
+          label={comments.length}
         />
       </Box>
       <Box>
-        <Comment
-          likes={3}
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQG67U94J9um8g/profile-displayphoto-shrink_800_800/0/1615622754806?e=1670457600&v=beta&t=CnaNpC_YQ0HjhB-lutpi_BgOrZvyUnHN4gJ9k6RGR48"
-          title="Luis Eduardo Ortiz"
-          message="Este es un comentario Este es un comentarioEste es un comentarioEste es un comentarioEste es un comentarioEste es un comentario"
-        />
+        {comments.map(comment => (
+          <Comment
+            key={comment.id}
+            likes={comment.likes}
+            src={comment.src}
+            message={comment.message}
+            title={comment.title}
+          />
+        ))}
       </Box>
       <TextField variant="outlined" placeholder="Add Comment" multiline />
       <Box>

@@ -1,7 +1,5 @@
 import { Box } from "@mui/material"
-import { ContainerPaper } from "./components/atoms"
-import { Comment } from "./components/molecules"
-import { Entity } from "./components/molecules/Entity/index"
+
 import { Header, SuggestedPages, Suggestions } from "./components/organisms"
 import { ProfileInfo } from "./components/organisms/ProfileInfo"
 import { Photos } from "./components/organisms/Photos/index"
@@ -9,6 +7,7 @@ import { Polls } from "./components/organisms/Polls"
 import { Post } from "./components/organisms/Post"
 import { Layout } from "./components/templates/Layout/index"
 import { TwitterFeeds } from "./components/organisms/TwitterFeeds/index"
+import posts from "./assets/data/posts.json"
 
 function App() {
   return (
@@ -23,7 +22,9 @@ function App() {
       <Layout
         header={<Header />}
         leftSide={[<ProfileInfo />, <SuggestedPages />, <TwitterFeeds />]}
-        main={[<Post />]}
+        main={posts.map(p => (
+          <Post key={p.id} {...p} />
+        ))}
         rightSide={[<Photos />, <Suggestions />, <Polls />]}
       />
     </Box>

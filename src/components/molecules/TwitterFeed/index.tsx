@@ -33,7 +33,8 @@ export const TwitterFeed = ({
           title={name}
           subtitle={
             <>
-              {username} <TaskAltIcon fontSize="small" color={"primary"} />
+              {username}{" "}
+              <TaskAltIcon sx={{ fontSize: "1em" }} color={"primary"} />
             </>
           }
         />

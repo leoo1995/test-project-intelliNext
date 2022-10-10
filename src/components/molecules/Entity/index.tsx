@@ -23,9 +23,13 @@ export const Entity = ({
         alt="image profile"
       ></Avatar>
       <Box flex={"auto"}>
-        <Title m={0}>{title}</Title>
+        <Title m={0} p={0} lineHeight={1.2}>
+          {title}
+        </Title>
         <Typography
           variant="subtitle1"
+          p={0}
+          lineHeight={1.2}
           fontWeight={300}
           color={"GrayText"}
           m={0}

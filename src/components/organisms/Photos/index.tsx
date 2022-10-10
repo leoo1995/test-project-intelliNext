@@ -8,7 +8,7 @@ export const Photos = () => {
       <Box
         display={"grid"}
         gridTemplateColumns={"repeat(3, 1fr)"}
-        gap={"8px 16px"}
+        gap={"16px 16px"}
       >
         {photos.map(photo => (
           <Image src={photo.src} alt={photo.src} />
