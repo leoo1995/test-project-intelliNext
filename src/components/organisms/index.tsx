@@ -1,2 +1,6 @@
 export * from "./ProfileInfo"
 export * from "./Suggestions"
+export * from "./SuggestedPages"
+export * from "./Photos"
+export * from "./Polls"
+export * from "./Header"

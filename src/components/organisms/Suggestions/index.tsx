@@ -1,6 +1,6 @@
 import { ButtonIcon, ContainerPaper, Title } from "../../atoms"
 import suggestionsData from "../../../assets/data/suggestions.json"
-import { Box, Button, IconButton } from "@mui/material"
+import { Box } from "@mui/material"
 import { Entity } from "../../molecules"
 import PersonAddAltOutlinedIcon from "@mui/icons-material/PersonAddAltOutlined"
 
@@ -8,7 +8,7 @@ export const Suggestions = () => {
   return (
     <ContainerPaper>
       <Title mb={3}>Suggestions</Title>
-      <Box>
+      <Box display={"grid"} gap={1}>
         {suggestionsData.map(
           ({ profilePhoto, firstName, lastName, mutualFriends, id }) => (
             <Box key={id} display="flex" alignItems={"center"} gap={2}>

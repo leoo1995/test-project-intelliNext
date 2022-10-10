@@ -35,7 +35,7 @@ export const Comment = ({
           <IconContainer
             icon={<LikeIcon active={liked} />}
             onClick={() => setLiked(!liked)}
-            label={123}
+            label={likes}
           />
         </Box>
         <Paragraph>{message}</Paragraph>

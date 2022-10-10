@@ -9,6 +9,9 @@ const theme = createTheme({
       secondary: "#6F6C7C",
     },
   },
+  typography: {
+    fontFamily: "'Nunito Sans',Roboto, sans-serif",
+  },
   components: {
     MuiButton: {
       defaultProps: {

@@ -9,7 +9,7 @@ export const FavoriteIcon = ({ active }: Props) => {
       {active ? (
         <StarIcon fontSize="small" sx={{ color: "#FF9F43" }} />
       ) : (
-        <StarOutlineIcon fontSize="small" color={"primary"} />
+        <StarOutlineIcon fontSize="small" sx={{ color: "text.secondary" }} />
       )}
     </>
   )
