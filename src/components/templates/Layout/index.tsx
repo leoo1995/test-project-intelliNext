@@ -9,7 +9,12 @@ type Props = {
 }
 export const Layout = ({ header, leftSide, rightSide, main }: Props) => {
   return (
-    <Box display="grid" gridTemplateColumns={"repeat(4,1fr)"} gap={3}>
+    <Box
+      display="grid"
+      gridTemplateColumns={"repeat(4,1fr)"}
+      gap={3}
+      maxWidth={"1600px"}
+    >
       <Box component={"header"} gridColumn="1/-1">
         {header}
       </Box>

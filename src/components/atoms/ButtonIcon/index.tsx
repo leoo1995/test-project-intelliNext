@@ -13,11 +13,14 @@ export const ButtonIcon = ({ children, tooltipTitle, ...rest }: Props) => {
           height: buttonSides,
           borderRadius: 1,
           border: "1px solid",
-          bgcolor: "primary.main",
+          backgroundColor: "primary.main",
+          opacity: 1,
           color: "#fff",
+
           "&:hover": {
             bgcolor: "primary.dark",
           },
+
           ...rest?.sx,
         }}
       >

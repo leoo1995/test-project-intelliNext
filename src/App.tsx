@@ -8,6 +8,7 @@ import { Post } from "./components/organisms/Post"
 import { Layout } from "./components/templates/Layout/index"
 import { TwitterFeeds } from "./components/organisms/TwitterFeeds/index"
 import posts from "./assets/data/posts.json"
+import { FloatButtonIcon } from "./components/molecules"
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
       display="flex"
       gap={2}
       flexWrap="wrap"
+      // position={"relative"}
     >
+      <FloatButtonIcon />
       <Layout
         header={<Header />}
         leftSide={[<ProfileInfo />, <SuggestedPages />, <TwitterFeeds />]}
